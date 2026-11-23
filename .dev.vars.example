@@ -1,0 +1,7 @@
+OPENAI_API_KEY=replace_me
+OPENAI_MODEL=your_current_openai_model
+FIREBASE_PROJECT_ID=twit-ai
+FIREBASE_WEB_API_KEY=copy_from_existing_firebase_web_config
+FIREBASE_CLIENT_EMAIL=your_firebase_service_account_email
+FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nreplace_me\n-----END PRIVATE KEY-----\n"
+ADMIN_EMAIL=your-admin-email
