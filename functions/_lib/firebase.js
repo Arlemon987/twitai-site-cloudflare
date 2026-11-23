@@ -155,4 +155,7 @@ export function parseBody(request) { return request.json().catch(()=>({})); }
 export function queryParam(request,key) { return new URL(request.url).searchParams.get(key); }
 export function requireMethod(request,method) { if(request.method!==method) throw apiError("Method not allowed.",405,"METHOD_NOT_ALLOWED"); }
 
-export function initFirestore(env) { API_ROOT_PLACEHOLDER = `https://firestore.googleapis.com/v1/projects/${env.FIREBASE_PROJECT_ID}/databases/(default)/documents`; }
+export function initFirestore(env) {
+  API_ROOT_PLACEHOLDER =
+    `projects/${env.FIREBASE_PROJECT_ID}/databases/(default)/documents`;
+}
